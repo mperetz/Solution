@@ -9,7 +9,7 @@ namespace Oss.Versioning.Domain
     /// </summary>
     public class QAMachineCollector
     {
-        private INotify _notify; 
+        private readonly INotify _notify; 
         public QAMachineCollector(INotify notify)
         {
             _notify = notify;                    

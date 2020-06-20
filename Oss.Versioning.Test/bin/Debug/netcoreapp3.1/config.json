@@ -1,0 +1,13 @@
+{
+  "qa_machines": [
+    "https://ossq1.rnd.esignlive.com/",
+    "https://ossq2.rnd.esignlive.com/",
+    "https://ossq3.rnd.esignlive.com/",
+    "https://ossq4.rnd.esignlive.com/"
+  ],
+  "manifest": [
+    {
+
+    }
+  ]
+}

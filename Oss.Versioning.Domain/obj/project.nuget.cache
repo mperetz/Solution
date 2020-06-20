@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ay+hrTv2tdNrZFZSScKnHWhTYHVFZZi6itBE9tAARtJEZ3P6p6h9XdNCO++7czSTKMlaVKFG7J/raVDCyIlB2A==",
+  "success": true,
+  "projectFilePath": "C:\\Dev\\OSS-Versioning\\Solution\\Oss.Versioning.Domain\\Oss.Versioning.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\peretmi1\\.nuget\\packages\\json.net\\1.0.22\\json.net.1.0.22.nupkg.sha512",
+    "C:\\Users\\peretmi1\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

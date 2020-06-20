@@ -1,0 +1,141 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\dev\\Versining\\OSS-Versioning\\OSS-Versioning.csproj": {}
+  },
+  "projects": {
+    "c:\\dev\\Versining\\OSS-Versioning\\OSS-Versioning.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\dev\\Versining\\OSS-Versioning\\OSS-Versioning.csproj",
+        "projectName": "OSS-Versioning",
+        "projectPath": "c:\\dev\\Versining\\OSS-Versioning\\OSS-Versioning.csproj",
+        "packagesPath": "C:\\Users\\peretmi1\\.nuget\\packages\\",
+        "outputPath": "c:\\dev\\Versining\\OSS-Versioning\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\peretmi1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "c:\\dev\\Versining\\Oss.Versioning.Domain\\Oss.Versioning.Domain.csproj": {
+                "projectPath": "c:\\dev\\Versining\\Oss.Versioning.Domain\\Oss.Versioning.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Json.Net": {
+              "target": "Package",
+              "version": "[1.0.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\dev\\Versining\\Oss.Versioning.Domain\\Oss.Versioning.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\dev\\Versining\\Oss.Versioning.Domain\\Oss.Versioning.Domain.csproj",
+        "projectName": "Oss.Versioning.Domain",
+        "projectPath": "c:\\dev\\Versining\\Oss.Versioning.Domain\\Oss.Versioning.Domain.csproj",
+        "packagesPath": "C:\\Users\\peretmi1\\.nuget\\packages\\",
+        "outputPath": "c:\\dev\\Versining\\Oss.Versioning.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\peretmi1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Json.Net": {
+              "target": "Package",
+              "version": "[1.0.22, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
