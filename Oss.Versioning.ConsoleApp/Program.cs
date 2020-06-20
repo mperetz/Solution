@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Threading.Tasks;
 using Oss.Versioning.Domain;
 
 namespace Oss.Versioning.ConsoleApp
@@ -23,10 +24,24 @@ namespace Oss.Versioning.ConsoleApp
     {
         static void Main(string[] args)
         {
+            MainAsync().GetAwaiter().GetResult();
+        }
+
+        private static async Task MainAsync()
+        {
             ConsoleWrite notifier = new ConsoleWrite();
-            Console.WriteLine("Getting QA Machine Configuration");
-            QAMachineCollector collector = new QAMachineCollector(notifier);
-            collector.Collect();            
+
+            try
+            {
+                Console.WriteLine("Getting QA Machine Configuration");
+                QAMachineCollector collector = new QAMachineCollector(notifier);
+                var task = await collector.Collect();
+            }
+            catch (Exception ex)
+            {
+                notifier.WriteError($"something went wrong! {ex.Message}");
+            }
+
         }
     }
 }

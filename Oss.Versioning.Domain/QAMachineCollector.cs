@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Oss.Versioning.Domain
 {
@@ -15,7 +16,7 @@ namespace Oss.Versioning.Domain
             _notify = notify;                    
         }
 
-        public async void Collect()
+        public async Task<bool> Collect()
         {           
             // service to get the sysinfo
             SysinfoService sysInfoService = new SysinfoService();
@@ -34,8 +35,11 @@ namespace Oss.Versioning.Domain
                 catch (Exception ex)
                 {
                     _notify.WriteError($"error processing: {url}. Exception {ex.Message}");
+                    return false; 
                 }
             }
+
+            return true; 
         }
 
         public void UpdateResults(string url, SysinfoData data)

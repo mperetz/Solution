@@ -7,12 +7,14 @@ using Newtonsoft.Json.Linq;
 
 namespace Oss.Versioning.Domain
 {
+
     class SysinfoService
     {
+        private const string SYSINFO_PATH = "/sysinfo";
         public async Task<SysinfoData> GetSysInfoByServerUrl(string serverName)
         {
             HttpRequest requet = new HttpRequest(serverName);
-            string json = await requet.Call("/sysfino");
+            string json = await requet.Call(SYSINFO_PATH);
 
             SysinfoData sysInfoData = new SysinfoData();
 
