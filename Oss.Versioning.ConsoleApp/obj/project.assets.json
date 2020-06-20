@@ -19,6 +19,20 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
+      },
+      "Oss.Versioning.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Json.Net": "1.0.22",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "bin/placeholder/Oss.Versioning.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Oss.Versioning.Domain.dll": {}
+        }
       }
     }
   },
@@ -65,12 +79,18 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
+    },
+    "Oss.Versioning.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Oss.Versioning.Domain/Oss.Versioning.Domain.csproj",
+      "msbuildProject": "../Oss.Versioning.Domain/Oss.Versioning.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Json.Net >= 1.0.22",
-      "Newtonsoft.Json >= 12.0.3"
+      "Newtonsoft.Json >= 12.0.3",
+      "Oss.Versioning.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -102,7 +122,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Dev\\OSS-Versioning\\Solution\\Oss.Versioning.Domain\\Oss.Versioning.Domain.csproj": {
+              "projectPath": "C:\\Dev\\OSS-Versioning\\Solution\\Oss.Versioning.Domain\\Oss.Versioning.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

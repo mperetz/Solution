@@ -17,9 +17,14 @@ namespace Oss.Versioning.Domain
 
         public async void Collect()
         {           
+            // service to get the sysinfo
             SysinfoService sysInfoService = new SysinfoService();
+            
+            // load the configuration, with all the servers we need to check
             var configuration = ConfigurationManager.LoadConfig();
-            foreach (string url in configuration.QAMachines)
+            
+            // for each server, get the sysinfo and report information on it 
+            foreach (var url in configuration.QAMachines)
             {
                 try
                 {
@@ -48,9 +53,6 @@ namespace Oss.Versioning.Domain
             _notify.Write($"Signer UI Version: {data.SignerUIVersion}");
             _notify.Write($"SSO Version: {data.SsoServiceVersion}");
             _notify.Write($"Sysinfo Version: {data.SysInfoVersion}");
-
-        }
-
-       
+        }       
     }
 }

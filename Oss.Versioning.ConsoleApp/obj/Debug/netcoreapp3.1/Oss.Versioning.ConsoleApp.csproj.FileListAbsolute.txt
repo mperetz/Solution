@@ -26,3 +26,5 @@ C:\Dev\OSS-Versioning\Solution\Oss.Versioning.ConsoleApp\bin\Debug\netcoreapp3.1
 C:\Dev\OSS-Versioning\Solution\Oss.Versioning.ConsoleApp\obj\Debug\netcoreapp3.1\Oss.Versioning.ConsoleApp.csproj.CopyComplete
 C:\Dev\OSS-Versioning\Solution\Oss.Versioning.ConsoleApp\bin\Debug\netcoreapp3.1\Json.Net.dll
 C:\Dev\OSS-Versioning\Solution\Oss.Versioning.ConsoleApp\obj\Debug\netcoreapp3.1\Oss.Versioning.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Dev\OSS-Versioning\Solution\Oss.Versioning.ConsoleApp\bin\Debug\netcoreapp3.1\Oss.Versioning.Domain.dll
+C:\Dev\OSS-Versioning\Solution\Oss.Versioning.ConsoleApp\bin\Debug\netcoreapp3.1\Oss.Versioning.Domain.pdb

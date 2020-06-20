@@ -9,7 +9,8 @@
       "Oss.Versioning.ConsoleApp/1.0.0": {
         "dependencies": {
           "Json.Net": "1.0.22",
-          "Newtonsoft.Json": "12.0.3"
+          "Newtonsoft.Json": "12.0.3",
+          "Oss.Versioning.Domain": "1.0.0"
         },
         "runtime": {
           "Oss.Versioning.ConsoleApp.dll": {}
@@ -29,6 +30,15 @@
             "assemblyVersion": "12.0.0.0",
             "fileVersion": "12.0.3.23909"
           }
+        }
+      },
+      "Oss.Versioning.Domain/1.0.0": {
+        "dependencies": {
+          "Json.Net": "1.0.22",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "Oss.Versioning.Domain.dll": {}
         }
       }
     }
@@ -52,6 +62,11 @@
       "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "path": "newtonsoft.json/12.0.3",
       "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "Oss.Versioning.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
