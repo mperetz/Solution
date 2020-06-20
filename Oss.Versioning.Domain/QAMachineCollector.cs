@@ -19,7 +19,7 @@ namespace Oss.Versioning.Domain
         public async Task<bool> Collect()
         {           
             // service to get the sysinfo
-            SysinfoService sysInfoService = new SysinfoService();
+            SysinfoService sysInfoService = new SysinfoService(_notify);
             
             // load the configuration, with all the servers we need to check
             var configuration = ConfigurationManager.LoadConfig();

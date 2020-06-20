@@ -12,6 +12,14 @@ namespace Oss.Versioning.ConsoleApp
             Console.WriteLine(notification);
         }
 
+        public void WriteHeader(string header)
+        {
+            var originalColor = Console.ForegroundColor;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(header);
+            Console.ForegroundColor = originalColor;
+        }
+
         public void WriteError(string error)
         {
             var originalColor = Console.ForegroundColor;
@@ -24,7 +32,9 @@ namespace Oss.Versioning.ConsoleApp
     {
         static void Main(string[] args)
         {
+            // using an aysnc method so I got to use something like this
             MainAsync().GetAwaiter().GetResult();
+            Console.WriteLine();
         }
 
         private static async Task MainAsync()
